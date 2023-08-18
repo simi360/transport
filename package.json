@@ -6,12 +6,11 @@
   "homepage": "https://simi360.github.io/transport/",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-     "start": "react-scripts start"
+    "preview": "vite preview"
   },
   "dependencies": {
     "framer-motion": "^10.13.1",
