@@ -1,0 +1,14 @@
+[
+    {
+        "menuName" : "About",
+        "path" : "/about"
+    },
+    {
+        "menuName" : "Services",
+        "path" : "/services"
+    },
+    {
+        "menuName" : "Contact",
+        "path" : "/contact"
+    }
+]

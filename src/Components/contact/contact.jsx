@@ -76,6 +76,7 @@ const Contact = () => {
                         />
 
                         <FormInput
+                            textArea="yes"
                             label="Message"
                             type='text' 
                             required 
@@ -83,6 +84,7 @@ const Contact = () => {
                             name='message'
                             value={message}
                         />
+
 
                         <Button type='submit'>Send</Button>
 

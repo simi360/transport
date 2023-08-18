@@ -3,11 +3,14 @@ import { styled, css } from "styled-components"
 const subColor = 'grey';
 const mainColor = 'black';
 
+
+
 const FormLabelShrinkStyle = css`
     top: -14px;
     font-size: 12px;
     color: ${mainColor};
 `
+
 const FormLabel = styled.label`
   color: ${subColor};
   font-size: 16px;
@@ -21,9 +24,9 @@ const FormLabel = styled.label`
   ${({shrink}) => shrink && FormLabelShrinkStyle};
 
 `
-const Input = styled.input`
-  background: none;
 
+const commonFormStyles = css`
+  background: none;
   color: ${subColor};
   font-size: 18px;
   padding: 10px 10px 10px 5px;
@@ -43,6 +46,12 @@ const Input = styled.input`
   }
 `
 
+const Input = styled.input`
+  ${commonFormStyles}
+`
+const TextArea = styled.textarea`
+  ${commonFormStyles}
+`
 
 const Group = styled.div`
   position: relative;
@@ -53,5 +62,6 @@ const Group = styled.div`
 export {
     Group,
     Input,
+    TextArea,
     FormLabel
 }

@@ -1,4 +1,5 @@
 import { string } from "prop-types";
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
 const CardContainer = styled.div`
@@ -44,7 +45,7 @@ const CardHeading = styled.div`
     white-space: pre-line;
 `
 
-const CardButtonDiv = styled.div`
+const CardButtonDiv = styled(Link)`
 
 `
 

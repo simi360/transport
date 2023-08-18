@@ -1,11 +1,11 @@
 import { Fragment } from "react"
 import Logo from "../logo/logo"
 import iconData from '../../assets/data/footerLinks.json'
-import { contentList } from "../nav/nav"
+import MenuList from '../../assets/data/menuList.json'
 
 import {
             FooterContainer,
-            SocialDiv,
+            SocialATag,
             FirstRowDiv,
             FooterLogoDiv,
             SecondRowDiv,
@@ -20,15 +20,19 @@ const Footer = () => {
         <Fragment>
             <FooterContainer>
                 <FirstRowDiv>
-                    <SocialDiv ogicon={iconData[0].iconSource} alticon={iconData[0].hoverIconSource} />
+                    <SocialATag ogicon={iconData[0].iconSource} alticon={iconData[0].hoverIconSource} href="tel:4379950360" />
                     <FooterLogoDiv>
                         <Logo />
                     </FooterLogoDiv>
-                    <SocialDiv ogicon={iconData[1].iconSource} alticon={iconData[1].hoverIconSource} />
+                    <SocialATag ogicon={iconData[1].iconSource} alticon={iconData[1].hoverIconSource} href="mailto: harsimrankaur2313@gmail.com?subject=Transportation Query- redirect from website"/>
                 </FirstRowDiv>
                 <SecondRowDiv>
                 {
-                    contentList.map(content => (<FooterLink key={content}>{content}</FooterLink>))
+                    MenuList.map(menuItem => (
+                        <FooterLink key={menuItem.menuName} to={menuItem.path}>
+                            {menuItem.menuName}
+                        </FooterLink>
+                    ))
                 }
                 </SecondRowDiv>
                 <ThirdRowDiv>

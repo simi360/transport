@@ -12,7 +12,7 @@ const Cards = () => {
             {
                 quickLinksData.map(data => {
                     return (
-                        <Card key={data.key} cardHeading={data.cardHeadings} ogimage={data.pictureSrc} altimage={data.hoverPictureSrc} />
+                        <Card key={data.key} cardHeading={data.cardHeadings} ogimage={data.pictureSrc} altimage={data.hoverPictureSrc} cardpath={data.path}/>
                     )
                 })
             }

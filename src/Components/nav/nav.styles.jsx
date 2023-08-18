@@ -8,7 +8,6 @@ const SpecialBannerDiv = styled.div`
     display: flex;
 
     :last-child{
-        cursor: pointer;
         background-color: ${(p) => p.theme.color.metallicGold};
     }
 
@@ -16,13 +15,15 @@ const SpecialBannerDiv = styled.div`
         right: 0vw;
     }
 `
-const SpecialBanner = styled.button`
+const SpecialBanner = styled.a`
     /* border: solid 3px #1d3652; */
     color: white;
     padding: 5px 10px;
     background-color: ${(p) => p.theme.color.darkBlue};
     width: 25vw;
     height: 40px;
+    text-align: center;
+    cursor: pointer;
 
     @media screen and (max-width: ${(p) => `${p.theme.bp.tablets}px`}){
         width: 50vw;
@@ -99,6 +100,11 @@ const HamburgerContent = styled(Link)`
     font-size: large;
     padding: 15px;
     text-align: center;
+
+    &:hover{
+        background: ${(p) => p.theme.color.darkBlue};
+        color: white;
+    }
 `
 
 const NavDiv = styled.div`

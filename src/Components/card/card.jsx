@@ -7,7 +7,7 @@ import {CardContainer,
         CardButton
         } from './card.styles'
 
-const Card = ({cardHeading, altimage, ogimage}) => {
+const Card = ({cardHeading, altimage, ogimage, cardpath}) => {
     return (
         <Fragment>
             <CardContainer>
@@ -15,7 +15,7 @@ const Card = ({cardHeading, altimage, ogimage}) => {
                 <CardHeading>
                     {cardHeading}
                 </CardHeading>
-                <CardButtonDiv>
+                <CardButtonDiv to={cardpath}>
                     <CardButton>
                         Learn more
                     </CardButton>

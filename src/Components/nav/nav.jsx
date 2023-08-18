@@ -1,10 +1,13 @@
 import { Fragment, useContext, useState } from "react";
 import { useViewportWidth } from "../../utils/getViewport";
 import { ThemeContext } from "styled-components";
-import Logo from "../logo/logo";
+import { Outlet } from "react-router-dom";
 
+import Logo from "../logo/logo";
 import MenuSVG from '../../assets/IconsSVG/menu.svg'
 import CloseSVG from '../../assets/IconsSVG/close.svg'
+
+import MenuList from '../../assets/data/menuList.json'
 
 import { NavDiv,
          NavDivContainer,
@@ -17,6 +20,7 @@ import { NavDiv,
          SpecialBannerDiv,
          SpecialBanner
         } from "./nav.styles";
+
 
     export const contentList = [
         "About",
@@ -44,14 +48,22 @@ const Nav = () => {
                     <Logo />
 
                     <SpecialBannerDiv>
-                        {specialBannerList.map(banner => (<SpecialBanner key={banner}>{banner}</SpecialBanner>))}
+                        <SpecialBanner href="tel:4379950360">{specialBannerList[0]}</SpecialBanner>
+                        <SpecialBanner>{specialBannerList[1]}</SpecialBanner>
                     </SpecialBannerDiv>
 
                 {   (width > theme.bp.tablets) 
                     ?  (   
                         <NavDivContainer>
                             <ContentDivContainer>
-                                {contentList.map(content => (<ContentLink key={content}>{content}</ContentLink>))}
+                            {
+                                MenuList.map(menuItem => (
+                                    <ContentLink key={menuItem.menuName} to={menuItem.path}>
+                                        {menuItem.menuName}
+                                    </ContentLink>
+                                ))
+                            }
+
                             </ContentDivContainer>
                         </NavDivContainer>
                         ) :
@@ -62,16 +74,22 @@ const Nav = () => {
                                     <div>
                                     <img src={CloseSVG} alt="Close Menu" className="closeSVG" />
                                     <HamburgerMenu>
-                                        { contentList.map(content => (<HamburgerContent key={content}>{content}</HamburgerContent>))}
+                                    {
+                                        MenuList.map(menuItem => (
+                                            <HamburgerContent key={menuItem.menuName} to={menuItem.path}>
+                                                {menuItem.menuName}
+                                            </HamburgerContent>
+                                        ))
+                                    }
                                     </HamburgerMenu>
                                     </div>
                                     ) : <img src={MenuSVG} alt="Menu Hamburger" />}
-                            </HamburgerMenuIcon>
-                            
+                            </HamburgerMenuIcon>   
                         </MobileDivContainer>
                     )
                 }
             </NavDiv>
+            <Outlet />
         </Fragment>
     )
 }

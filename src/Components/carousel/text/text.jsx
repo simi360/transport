@@ -1,4 +1,5 @@
 import { Fragment, useContext } from "react";
+import { Link } from "react-router-dom";
 // import {AnimatePresence, motion} from "framer-motion"
 // import { slideVariants } from '../../../utils/slideVariants'
 import TextData from '../../../assets/data/carouselImageAndText.json'
@@ -11,41 +12,40 @@ import {
 
 
 
+
 const Text = () => {
     const{currentIndex} = useContext(IndexContext);
 
-    const textData = [
-        "Know about our services",
-        "Know more about us",
-        "Come, ship with us",
-        "Contact us"
-      ]
-
     return (
         <Fragment>
-
+                
                     {
                         (currentIndex%2 === 0) ?
                         (
                             <TextContainerDiv>
-                                <TextDiv>
-                                        {
-                                            TextData.text[currentIndex]
-                                        }
-                                </TextDiv>
+                                <Link to={TextData.textPath[currentIndex]}>
+                                    <TextDiv>
+                                            {
+                                                TextData.text[currentIndex]
+                                            }
+                                    </TextDiv>
+                                </Link>
                             </TextContainerDiv>
                         ) :
                         (
                             <TextContainerDivRight>
-                                <TextDiv>
-                                    {
-                                        TextData.text[currentIndex]
-                                    }
-                                </TextDiv>
+                                <Link to={TextData.textPath[currentIndex]}>
+                                        <TextDiv>
+                                            {
+                                                TextData.text[currentIndex]
+                                            }
+                                        </TextDiv>
+                                    </Link>
                             </TextContainerDivRight>
                         )
                                 
                 }
+               
 
         </Fragment>
     )

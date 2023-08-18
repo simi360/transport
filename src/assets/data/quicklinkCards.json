@@ -3,24 +3,28 @@
         "key": "11",
         "cardHeadings" : "Within \n Canada",
         "pictureSrc" : "src/assets/truck-images/blue-front-truck-filled.png",
-        "hoverPictureSrc" : "src/assets/truck-images/white-front-truck-filled.png"
+        "hoverPictureSrc" : "src/assets/truck-images/white-front-truck-filled.png",
+        "path": "/services"
     },
     {
         "key": "12",
         "cardHeadings" : "Shunting \n Services",
         "pictureSrc" : "src/assets/truck-images/blue-side-truck-filled.png",
-        "hoverPictureSrc" : "src/assets/truck-images/white-side-truck-filled.png"
+        "hoverPictureSrc" : "src/assets/truck-images/white-side-truck-filled.png",
+        "path": "/services"
     },
     {
         "key": "13",
         "cardHeadings" : "XYZ \n Services",
         "pictureSrc" : "src/assets/truck-images/blue-front-truck-filled.png",
-        "hoverPictureSrc" : "src/assets/truck-images/white-front-truck-filled.png"
+        "hoverPictureSrc" : "src/assets/truck-images/white-front-truck-filled.png",
+        "path": "/services"
     },
     {
         "key": "14",
         "cardHeadings" : "Our \n Advantage",
         "pictureSrc" : "src/assets/truck-images/blue-side-truck-filled.png",
-        "hoverPictureSrc" : "src/assets/truck-images/white-side-truck-filled.png"
+        "hoverPictureSrc" : "src/assets/truck-images/white-side-truck-filled.png",
+        "path": "/about"
     }
 ]

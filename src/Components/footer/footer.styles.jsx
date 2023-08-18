@@ -8,7 +8,7 @@ const FooterContainer = styled.div`
 `
 
 
-const SocialDiv = styled.div`
+const SocialATag = styled.a`
     width: 30px;
     height: 30px;
     background: url(${(p) => p.ogicon}) no-repeat;
@@ -57,7 +57,7 @@ const ThirdRowDiv = styled.div`
 `
 export {
     FooterContainer,
-    SocialDiv,
+    SocialATag,
     FirstRowDiv,
     FooterLogoDiv,
     SecondRowDiv,

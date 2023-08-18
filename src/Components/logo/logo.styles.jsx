@@ -1,4 +1,6 @@
+
 import { styled } from "styled-components"
+
 
 const LogoDivContainer = styled.div`
         background-color: ${(p) => p.theme.color.metallicGold};
@@ -31,6 +33,11 @@ const LogoText = styled.div`
     padding: 10px;
     position: relative;
     transform: translate(30%, -75%);
+    color: black;
+
+    &:active {
+        color: red;
+    }
 
     span{
         display: block;
