@@ -1,7 +1,7 @@
 import { Fragment, useContext } from "react";
 import { IndexContext } from "../../../utils/contexts/index.context";
 
-import LeftArrowSVG from '../../../assets/IconsSVG/left.svg';
+import LeftArrowSVG from '/asset/IconsSVG/left.svg';
 
 
 import {

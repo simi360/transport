@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
 import Card from "../card/card";
-import quickLinksData from '../../assets/data/quicklinkCards.json'
+import quickLinksData from '../../data/quicklinkCards.json'
 
 import {CardsContainer} from './cards.styles'
 

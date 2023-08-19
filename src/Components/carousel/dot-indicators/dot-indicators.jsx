@@ -1,6 +1,6 @@
 import { Fragment, useContext } from "react";
 import { IndexContext } from "../../../utils/contexts/index.context";
-import URLData from '../../../assets/data/carouselImageAndText.json'
+import URLData from '../../../data/carouselImageAndText.json'
 import {
         IndicatorDotsDiv,
         DotDiv

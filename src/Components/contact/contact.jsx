@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react"
 import FormInput from "../form-input/form-input"
-import TrailerImage from '../../assets/truck-images/trailer-car.png'
+import TrailerImage from '/asset/truck-images/trailer-car.png'
 
 import {
     ContactContainer, 

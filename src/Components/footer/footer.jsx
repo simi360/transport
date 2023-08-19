@@ -1,7 +1,8 @@
 import { Fragment } from "react"
 import Logo from "../logo/logo"
-import iconData from '../../assets/data/footerLinks.json'
-import MenuList from '../../assets/data/menuList.json'
+
+import iconData from '../../data/footerLinks.json'
+import MenuList from '../../data/menuList.json'
 
 import {
             FooterContainer,

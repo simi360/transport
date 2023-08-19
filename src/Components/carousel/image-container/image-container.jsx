@@ -1,7 +1,7 @@
 import { Fragment, useContext } from "react";
 // import {motion, AnimatePresence} from "framer-motion";
 // import { slideVariants } from '../../../utils/slideVariants'
-import URLData from '../../../assets/data/carouselImageAndText.json';
+import URLData from '../../../data/carouselImageAndText.json';
 import { IndexContext } from "../../../utils/contexts/index.context";
 
 import {

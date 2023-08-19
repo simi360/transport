@@ -4,10 +4,10 @@ import { ThemeContext } from "styled-components";
 import { Outlet } from "react-router-dom";
 
 import Logo from "../logo/logo";
-import MenuSVG from '../../assets/IconsSVG/menu.svg'
-import CloseSVG from '../../assets/IconsSVG/close.svg'
+import MenuSVG from '/asset/IconsSVG/menu.svg'
+import CloseSVG from '/asset/IconsSVG/close.svg'
 
-import MenuList from '../../assets/data/menuList.json'
+import MenuList from '../../data/menuList.json'
 
 import { NavDiv,
          NavDivContainer,
