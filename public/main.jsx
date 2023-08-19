@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { HashRouter } from 'react-router-dom'
-import { IndexProvider } from './utils/contexts/index.context.jsx'
-import App from './App.jsx'
+import { IndexProvider } from '../src/utils/contexts/index.context.jsx'
+import App from '../src/App.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
