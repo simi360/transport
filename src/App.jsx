@@ -19,10 +19,10 @@ function App() {
         <GlobalStyle />
         <ViewportWidthProvider>
           <Routes>
-            <Route path='/' element={<Nav/>}>
+            <Route exact path='/' element={<Nav/>}>
               <Route index element={<Home />} />
-              <Route path='/home' element={<Home />} />
-              <Route path='/about' element={<About />} />
+              <Route exact path='/home' element={<Home />} />
+              <Route exact path='/about' element={<About />} />
               <Route path='/services' element={<Services />} />
               <Route path='/contact' element={<ContactUs />} />
             </Route>
