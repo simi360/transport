@@ -18,6 +18,7 @@ function App() {
       <ThemeProvider theme={Theme}>
         <GlobalStyle />
         <ViewportWidthProvider>
+        <h1>what's happening?</h1>
           <Routes>
             <Route exact path='/' element={<Nav/>}>
               <Route index element={<Home />} />

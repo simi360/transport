@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://simi360.github.io/transport/",
+  "homepage": "https://simi360.github.io/transport",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
