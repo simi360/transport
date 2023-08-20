@@ -5,7 +5,8 @@ import { IndexProvider } from './src/utils/contexts/index.context.jsx'
 import App from './src/App.jsx'
 
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <HashRouter>
       <IndexProvider>
@@ -13,4 +14,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </IndexProvider>
     </HashRouter>
   </React.StrictMode>
-)
+);
